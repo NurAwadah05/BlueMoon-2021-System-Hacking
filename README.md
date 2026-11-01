@@ -54,13 +54,13 @@ A valid password for the user `robin` was discovered.
 
 <img src="screenshots/08.png" width="400">
   <img src="screenshots/09.png" width="400">
-  ##Privilege Escalation – Robin to Jerry
+ 
 
 After gaining SSH access as `robin`, the sudo permissions were checked 
 
 <img src="screenshots/10.png" width="500">
 
-##Privilege Escalation – Jerry to Root
+## Privilege Escalation – Jerry to Root
 
 After successfully gaining access as `jerry`, the user privileges and group membership were checked using the `id` command.
 
@@ -78,7 +78,7 @@ docker run -it --rm -v /:/mnt alpine chroot /mnt /bin/sh
 
 The `whoami` command was used to verify the privilege escalation. The output returned `root`, confirming successful root access.
 
-## 12. Root Flag
+## Root Flag
 
 After obtaining root access, the `/root` directory was checked:
 
