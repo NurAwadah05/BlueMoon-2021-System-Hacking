@@ -22,3 +22,4 @@
 Both Kali Linux and BlueMoon-2021 virtual machines were configured to use the same Host-Only Adapter in Oracle VirtualBox. This allows both machines to communicate within the isolated lab network.
 
 ![Network Configuration](screenshots/Screenshot%202026-11-01%20200115.png)
+![Network Configuration](screenshots/Screenshot%202026-11-01%20200115.png)
