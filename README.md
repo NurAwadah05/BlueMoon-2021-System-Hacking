@@ -48,3 +48,9 @@ The QR code revealed FTP login information.The discovered credentials were:
 
 The script also contained an FTP command to connect to the target machine.
 <img src="screenshots/07.png" width="500">
+
+The Hydra tool was used to test the passwords from the downloaded password list against the SSH service.
+A valid password for the user `robin` was discovered.
+
+<img src="screenshots/08.png" width="400">
+  <img src="screenshots/09.png" width="400">
