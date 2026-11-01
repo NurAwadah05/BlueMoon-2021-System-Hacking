@@ -54,13 +54,13 @@ A valid password for the user `robin` was discovered.
 
 <img src="screenshots/08.png" width="400">
   <img src="screenshots/09.png" width="400">
-  ## 10. Privilege Escalation – Robin to Jerry
+  ##Privilege Escalation – Robin to Jerry
 
 After gaining SSH access as `robin`, the sudo permissions were checked 
 
 <img src="screenshots/10.png" width="500">
 
-## 11. Privilege Escalation – Jerry to Root
+##Privilege Escalation – Jerry to Root
 
 After successfully gaining access as `jerry`, the user privileges and group membership were checked using the `id` command.
 
@@ -99,4 +99,5 @@ Fl4g{r00t-H4ckTh3P14n3t0nc34g41n}
 ```
 
 The BlueMoon-2021 penetration testing exercise was successfully completed after obtaining root access.
+
 <img src="screenshots/11.png" width="500">
