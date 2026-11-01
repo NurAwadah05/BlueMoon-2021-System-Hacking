@@ -54,3 +54,49 @@ A valid password for the user `robin` was discovered.
 
 <img src="screenshots/08.png" width="400">
   <img src="screenshots/09.png" width="400">
+  ## 10. Privilege Escalation – Robin to Jerry
+
+After gaining SSH access as `robin`, the sudo permissions were checked 
+
+<img src="screenshots/10.png" width="500">
+
+## 11. Privilege Escalation – Jerry to Root
+
+After successfully gaining access as `jerry`, the user privileges and group membership were checked using the `id` command.
+
+The output showed that `jerry` belonged to the `docker` group. The available Docker images were then checked using:
+
+```bash
+docker images
+```
+
+An Alpine Linux image was found. Docker was used to mount the target system's root directory and obtain a root shell with the following command:
+
+```bash
+docker run -it --rm -v /:/mnt alpine chroot /mnt /bin/sh
+```
+
+The `whoami` command was used to verify the privilege escalation. The output returned `root`, confirming successful root access.
+
+## 12. Root Flag
+
+After obtaining root access, the `/root` directory was checked:
+
+```bash
+ls /root
+```
+
+The `root.txt` file was found and its contents were displayed using:
+
+```bash
+cat /root/root.txt
+```
+
+**Root Flag:**
+
+```text
+Fl4g{r00t-H4ckTh3P14n3t0nc34g41n}
+```
+
+The BlueMoon-2021 penetration testing exercise was successfully completed after obtaining root access.
+<img src="screenshots/11.png" width="500">
